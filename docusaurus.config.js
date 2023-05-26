@@ -7,11 +7,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
-// Force Navbar Color Mode to Dark //
+// Force Aplication Color Mode to Dark //
 themeConfig: {
   colorMode: {
-    defaultMode: 'light',
-    disableSwitch: false,
+    defaultMode: 'dark',
+    disableSwitch: true,
     respectPrefersColorScheme: false,
   },
 },
