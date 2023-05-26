@@ -8,13 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
 
 // Force Aplication Color Mode to Dark //
-themeConfig: {
-  colorMode: {
-    defaultMode: 'dark',
-    disableSwitch: true,
-    respectPrefersColorScheme: false,
-  },
-},
+ 
 
   title: 'Docs',
   tagline: 'Aprenda mais a respeito das operações relacionadas ao marketplaces',
@@ -78,7 +72,7 @@ themeConfig: {
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.png',
-        },
+        }, 
         items: [
           {
             type: 'docSidebar',
@@ -110,6 +104,14 @@ themeConfig: {
             position: 'right',
           }
         ],
+      },
+      announcementBar: {
+        id: 'support_us',
+        content:
+          '<H2>EM PROCESSO DE HOMOLOGAÇÃO</H2> <a href="https://wa.me/5551980130941" target="_blank" >ENVIE SEU FEEDBACK </a>',
+        backgroundColor: '#FF0000',
+        textColor: '#fff',
+        isCloseable: false,
       },
       footer: {
         style: 'dark',
