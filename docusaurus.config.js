@@ -114,6 +114,10 @@ const config = {
         isCloseable: false,
       },
       footer: {
+        logo: {
+          src: '/img/logo.png',
+          width: 250,
+        },
         style: 'dark',
         links: [
           {
