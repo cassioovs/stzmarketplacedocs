@@ -6,6 +6,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+
+// Force Navbar Color Mode to Dark //
+themeConfig: {
+  colorMode: {
+    defaultMode: 'light',
+    disableSwitch: false,
+    respectPrefersColorScheme: false,
+  },
+},
+
   title: 'Docs',
   tagline: 'Aprenda mais a respeito das operações relacionadas ao marketplaces',
   favicon: 'img/favicon.ico',
@@ -74,7 +84,19 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Base de Conhecimento',
+            label: 'Tutorial Rápido',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Guias',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Suporte',
           },
           //{to: '/blog', label: 'Blog', position: 'left'}
           {
@@ -138,3 +160,4 @@ const config = {
 };
 
 module.exports = config;
+
