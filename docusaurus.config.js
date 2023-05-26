@@ -152,7 +152,7 @@ const config = {
             ],
           },
         ],
-        copyright: "© Copyright - 2023 <br> Todos os direitos reservados <br> Razão Social: Calcenter Calçados Centro Oeste Ltda. <br> CNPJ: 15.048.754/0119-80 IE: 257.7187-70",
+        copyright: "© Copyright - 2023 <br> Todos os direitos reservados <br> Razão Social: Calcenter Calçados Centro Oeste Ltda. <br> CNPJ: 15.048.754/0119-80 <br>",
       },
       prism: {
         theme: lightCodeTheme,
