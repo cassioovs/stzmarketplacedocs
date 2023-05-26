@@ -108,7 +108,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          '<H2>EM PROCESSO DE HOMOLOGAÇÃO</H2> <a href="https://wa.me/5551980130941" target="_blank" >ENVIE SEU FEEDBACK </a>',
+          '<H2>EM PROCESSO DE HOMOLOGAÇÃO</H2> <h3><a href="https://wa.me/5551980130941" target="_blank" >ENVIE SEU FEEDBACK </a></h3>',
         backgroundColor: '#FF0000',
         textColor: '#fff',
         isCloseable: false,
