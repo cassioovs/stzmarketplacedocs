@@ -1,0 +1,244 @@
+---
+info:
+  _postman_id: 52741b82-e2a5-498f-b423-8a74173fae68
+  name: VTEX
+  schema: https://schema.getpostman.com/json/collection/v2.0.0/collection.json
+  _exporter_id: '12147324'
+item:
+- name: Suggestions
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-cea-QSZSZM
+    - key: X-VTEX-API-AppToken
+      value: UWTJGJJONPJPEGSPVGOQFWCVVMWSXNISATHWYQIAPMPEBXRXQIKGIMQYTXNTNRRAGQOKYWQEXOATGYUXVYCODBKNCJDBCPNYUPXKIGYURFJTMXRVDPYOOCXFGBHPSOBI
+    url: https://api.vtex.com/cea/suggestions/sabinearias/0000000014267
+  response: []
+- name: Single Product
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-drinksandco-PVSRSV
+    - key: X-VTEX-API-AppToken
+      value: ZMNNLVMPXTTGSCBBCRPQUBCHSCIKZXFUMHPYNJGQJYEBACBNRPMWGNLYJFVINCPZNYTKMCOTKZGVWAHPBVSKLIOZWROHOYCHJFNBJQAOBSMHGPBJYFGSJFNFKTOVOHFL
+    url:
+      raw: https://drinksandco.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit?refId=kit662
+      protocol: https
+      host:
+      - drinksandco
+      - vtexcommercestable
+      - com
+      - br
+      path:
+      - api
+      - catalog
+      - pvt
+      - stockkeepingunit
+      query:
+      - key: refId
+        value: kit662
+  response: []
+- name: Single Order
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-cidadejardimdigital-GWGQJB
+      type: text
+    - key: X-VTEX-API-AppToken
+      value: GUMWLWGRNKIVYRBQIUVMNAQGLVCKTVKJZSUYSIHPNLYTYCECDPXLFLMGEGKPUWYSAYVGWDXANFZCBWHJRAHDXYENFNTMXRVQMFSAGYFZRXYZMKFHZBYTOUVCTHAIJLDV
+      type: text
+    url: http://cidadejardimdigital.vtexcommercestable.com.br/api/oms/pvt/orders/982782933588-01
+  response: []
+- name: SLAs
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-xiaomi-BZXYRK
+    - key: X-VTEX-API-AppToken
+      value: RAKKICWFGWAIHMJNXYEEKEEHDFYDNMVBNTEDRSGZWPJSFUFPNFKHRDSNWCHCDTSUAZUNIFWFRFHUVMBIAJPHBOJJBQGPKDVDWORGZRHHJFPLWXRKAYCUDKSMPLMRYGVO
+    url: https://xiaomi.vtexcommercestable.com.br/api/logistics/pvt/configuration/carriers
+  response: []
+- name: Canais de venda
+  protocolProfileBehavior:
+    disableBodyPruning: true
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-jurunense-HYSXSZ
+      type: text
+    - key: X-VTEX-API-AppToken
+      value: ICWLQDOJAOJTRVJWITQLJRSZUGUFXKREZWSSJJFWLHVHTDOLXZXRIGZRKWRKJJLQWFUVDRMZNUZBWKGQRIHYMAVTWAINSUNCVFLNISIGMXEOGXVAPASBBNDWJBZCJZHT
+      type: text
+    body:
+      mode: raw
+      raw: ''
+      options:
+        raw:
+          language: json
+    url: https://jurunense.myvtex.com.com/api/catalog_system/pvt/saleschannel/list
+  response: []
+- name: Preço por policyID
+  protocolProfileBehavior:
+    disableBodyPruning: true
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-philco-BUCULI
+      type: text
+    - key: X-VTEX-API-AppToken
+      value: EJXCMVDWKJUWPEGTOJWPVTAWMDWIROUYLWMBICWCDMNPOFQKISJPKHQLIAPIZVEWOVLSRFLLMTMIFLIGNLAZEFNDGBSHMOCIIRASUYSCHXCQVIFXSIVNVFRJIHLQMDZY
+      type: text
+    body:
+      mode: raw
+      raw: ''
+      options:
+        raw:
+          language: json
+    url: https://philco.vtexcommercestable.com.br/api/pricing/prices/1431/computed/42
+  response: []
+- name: Shipping Simulate (é diferente do quotation)
+  request:
+    method: POST
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-cantao-OUREQX
+      type: text
+    - key: X-VTEX-API-AppToken
+      value: KKIMGEDYKIQBCQJIQNCFNTTVBUHITKPEUBYXEQWTFCXAODJGAMNIGXNRQMKMWVEZSMHBRLEZQIZKWTHYKBIHXHXXNHHRFKXKXXHCWIOPHNRXYDVWFMBUNXCKOJNJDNUG
+      type: text
+    body:
+      mode: raw
+      raw: "{\r\n    \"location\": {\r\n        \"zipCode\": \"05625160\",\r\n        \"country\":
+        \"BRA\",\r\n        \"point\": []\r\n    },\r\n    \"saleschannel\": 8,\r\n
+        \   \"items\": [\r\n        {\r\n            \"idSku\": \"1109327\",\r\n            \"price\":
+        null,\r\n            \"quantidade\": 1\r\n        }\r\n    ]\r\n}"
+      options:
+        raw:
+          language: json
+    url: https://cantao.vtexcommercestable.com.br/api/logistics/pvt/shipping/simulation
+  response: []
+- name: Simulacao de Frete (Api "secreta")
+  request:
+    method: POST
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-nespresso-ALGUAS
+      type: text
+    - key: X-VTEX-API-AppToken
+      value: PNSCMVXLGDYOZIPGCKYBJAXTMSYLHXEUVLMAKELAKJIAMDYCKNAKBZTPPYPUXMDIYDSNWOWYZXRZRXGJUVBTXUTWSXKLOQDYGABJKKGVRCKDHTXRSGABKKLEKWUZELJI
+      type: text
+    body:
+      mode: raw
+      raw: '{"location":{"zipCode":"27256790","country":"BRA","point":[]},"saleschannel":1,"items":[{"idSku":"142","price":null,"quantidade":1}]}'
+      options:
+        raw:
+          language: json
+    url: https://nespresso.myvtex.com/api/logistics/pvt/shipping/simulation
+  response: []
+- name: Single Product By RefID
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-nespresso-ALGUAS
+    - key: X-VTEX-API-AppToken
+      value: PNSCMVXLGDYOZIPGCKYBJAXTMSYLHXEUVLMAKELAKJIAMDYCKNAKBZTPPYPUXMDIYDSNWOWYZXRZRXGJUVBTXUTWSXKLOQDYGABJKKGVRCKDHTXRSGABKKLEKWUZELJI
+    url: https://nespresso.vtexcommercestable.com.br/api/catalog/pvt/stockkeepingunit
+  response: []
+- name: Inventory (Estoque) SKU
+  protocolProfileBehavior:
+    disableBodyPruning: true
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-nespresso-ALGUAS
+      type: text
+    - key: X-VTEX-API-AppToken
+      value: PNSCMVXLGDYOZIPGCKYBJAXTMSYLHXEUVLMAKELAKJIAMDYCKNAKBZTPPYPUXMDIYDSNWOWYZXRZRXGJUVBTXUTWSXKLOQDYGABJKKGVRCKDHTXRSGABKKLEKWUZELJI
+      type: text
+    body:
+      mode: raw
+      raw: ''
+      options:
+        raw:
+          language: json
+    url: https://nespresso.vtexcommercestable.com.br/api/logistics/pvt/inventory/skus/110
+  response: []
+- name: SKUID by RefId
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-nespresso-ALGUAS
+    - key: X-VTEX-API-AppToken
+      value: PNSCMVXLGDYOZIPGCKYBJAXTMSYLHXEUVLMAKELAKJIAMDYCKNAKBZTPPYPUXMDIYDSNWOWYZXRZRXGJUVBTXUTWSXKLOQDYGABJKKGVRCKDHTXRSGABKKLEKWUZELJI
+    url:
+      raw: https://nespresso.vtexcommercestable.com.br/api/catalog_system/pvt/products/productgetbyrefid/KITESPRESSO
+      protocol: https
+      host:
+      - nespresso
+      - vtexcommercestable
+      - com
+      - br
+      path:
+      - api
+      - catalog_system
+      - pvt
+      - products
+      - productgetbyrefid
+      - KITESPRESSO
+      query:
+      - key: skuId
+        value: '14158'
+        disabled: true
+  response: []
+- name: SKU and Context
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-tb0426-NMIBCW
+    - key: X-VTEX-API-AppToken
+      value: UQQLIDDSZGDVAIKDMNSXEMEIJDJRUOKNZVKRJBUJYMAFGUBAXJDXHGAHLIBFTLYKVPWEXTULTIYRLZBOBJUKLMGSVCFBZOPNOPJRXWCEPSEYIIWLGNDKRNZJJEJUNSLE
+    url: https://tb0426.myvtex.com/api/catalog_system/pvt/sku/stockkeepingunitbyid/175
+  response: []
+- name: Product Specifications
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-tb0426-NMIBCW
+    - key: X-VTEX-API-AppToken
+      value: UQQLIDDSZGDVAIKDMNSXEMEIJDJRUOKNZVKRJBUJYMAFGUBAXJDXHGAHLIBFTLYKVPWEXTULTIYRLZBOBJUKLMGSVCFBZOPNOPJRXWCEPSEYIIWLGNDKRNZJJEJUNSLE
+    url: https://tb0426.myvtex.com/api/catalog_system/pvt/products/{productId}/specification
+  response: []
+- name: Seller ID
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-buyoffice-FMUNNA
+    - key: X-VTEX-API-AppToken
+      value: SSGQBPFGAUYTIYSNGZQUWGOGPWGOSIZIGWKOWMNJKCUWVFXTEILYJWBUSKJYSDREBHNNYSPHNDDZZCTUHJTQWLJOOQATQFGZQCQAOVFUDCBCTCYRDVMMVPOJUPAOROEV
+    url: https://buyoffice.vtexcommercestable.com.br/api/catalog_system/pvt/brand/list
+  response: []
+- name: All Suggestions
+  request:
+    method: GET
+    header:
+    - key: X-VTEX-API-AppKey
+      value: vtexappkey-buyoffice-FMUNNA
+    - key: X-VTEX-API-AppToken
+      value: SSGQBPFGAUYTIYSNGZQUWGOGPWGOSIZIGWKOWMNJKCUWVFXTEILYJWBUSKJYSDREBHNNYSPHNDDZZCTUHJTQWLJOOQATQFGZQCQAOVFUDCBCTCYRDVMMVPOJUPAOROEV
+    url: https://api.vtex.com/buyoffice/suggestions
+  response: []
+variable:
+- key: url
+  value: https://nespresso.vtexcommercestable.com.br

@@ -33,7 +33,3 @@ Vamos lá, voalá!
 cd my-marketplace-docs-material
 npm run start stzdocs
 ```
-
-O comando `cd` altera o diretório com o qual você está trabalhando, você precisará navegar pelo terminal.
-
-O comando `npm run start` cria sua documentação localmente e o fornece por meio de um servidor de desenvolvimento, pronto para visualização em seu localhost
