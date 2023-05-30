@@ -108,17 +108,6 @@ const config = {
             label: 'Atualizações',
           },
           {
-            type: 'localeDropdown',
-            position: 'right',
-            dropdownItemsAfter: [
-              {
-                to: 'https://youtube.com/',
-                label: 'Ajuda para traduzir',
-              },
-            ],
-          },
-      
-          {
             type: 'html',
             position: 'left',
             value: '<button>Versão 1.0</button>',
