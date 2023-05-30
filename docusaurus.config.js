@@ -7,70 +7,28 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
-  plugins: [
-    [
-      '@docusaurus/plugin-pwa',
-      {
-        debug: true,
-        offlineModeActivationStrategies: [
-          'appInstalled',
-          'standalone',
-          'queryString',
-          'mobile',
-          'saveData',
-          'always'
-        ],
-        pwaHead: [
-          {
-            tagName: 'link',
-            rel: 'icon',
-            href: '/img/docusaurus.png',
-          },
-          {
-            tagName: 'link',
-            rel: 'manifest',
-            href: '/manifest.json',
-          },
-          {
-            tagName: 'meta',
-            name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
-          },
-          {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-capable',
-            content: 'yes',
-          },
-          {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-status-bar-style',
-            content: '#000',
-          },
-          {
-            tagName: 'link',
-            rel: 'apple-touch-icon',
-            href: '/img/docusaurus.png',
-          },
-          {
-            tagName: 'link',
-            rel: 'mask-icon',
-            href: '/img/docusaurus.svg',
-            color: 'rgb(37, 194, 160)',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileImage',
-            content: '/img/docusaurus.png',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileColor',
-            content: '#000',
-          },
-        ],
-      },
-    ],
-  ],
+  plugins: [ 
+      [
+        'docusaurus-plugin-openapi-docs',
+        {
+          id: "apiDocs",
+          docsPluginId: "classic",
+          config: {
+            petstore: { // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
+              specPath: "examples/petstore.yaml", // Path to designated spec file
+              outputDir: "api/petstore", // Output directory for generated .mdx docs
+              sidebarOptions: {
+                groupPathsBy: "tag",
+              },
+            },
+            burgers: {
+              specPath: "examples/food/burgers/openapi.yaml",
+              outputDir: "api/food/burgers",
+            }
+          }
+        },
+      ]
+    ], 
 
   title: 'Docs',
   tagline: 'Aprenda mais a respeito das operações relacionadas ao marketplaces',
@@ -84,8 +42,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'cassioovs', // Usually your GitHub org/user name.
+  projectName: 'stzmarketplacedocs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -141,37 +99,31 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial Rápido',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
             label: 'Guias',
           },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Suporte',
-          },
-          //{to: '/blog', label: 'Blog', position: 'left'}
-          {
-            href: 'https://hub2b.zendesk.com/hc/pt-br/requests',
-            label: 'Central de Ajuda Hub2b',
-            position: 'right',
+            label: 'Atualizações',
           },
           {
-            href: 'https://pluggto.atlassian.net/servicedesk/customer/portals',
-            label: 'Central de Ajuda Plugg.to',
-            position: 'right',
-          }
+            type: 'docsVersionDropdown',
+            position: 'left',
+            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
+          },
+          {
+            type: 'html',
+            position: 'left',
+            value: '<button>Versão 1.0</button>',
+          },
         ],
       },
       announcementBar: {
         id: 'support_us',
         content:
-          '<H2>EM PROCESSO DE HOMOLOGAÇÃO</H2> <h3><a href="https://wa.me/5551980130941" target="_blank" >ENVIE SEU FEEDBACK </a></h3>',
+         '<br><H2>EM PROCESSO DE HOMOLOGAÇÃO</H2>',
         backgroundColor: '#FF0000',
         textColor: '#fff',
         isCloseable: false,
@@ -230,4 +182,3 @@ const config = {
 
 module.exports = config;
 
-// PWA Config with Manifest

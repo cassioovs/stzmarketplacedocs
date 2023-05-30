@@ -2,46 +2,38 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Início Rápido
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Vamos descobrir esta documentação em menos de 5 minutos.
 
-## Getting Started
+Seja muito bem-vindo.
 
-Get started by **creating a new site**.
+Vamos começar?
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### O que você precisa (pré-requisitos)
 
-### What you'll need
+1. Fé
+2. Incentivar o time a documentar seus processos
+3. Adotar boas práticas para atualizar seus conhecimentos frequentemente
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
+## Entendendo os fluxos
 
-Generate a new Docusaurus site using the **classic template**.
+Aute nulla eu ullamco consectetur sint commodo ut exercitation ea cupidatat pariatur eu. Reprehenderit deserunt duis deserunt magna non non duis excepteur cillum excepteur. Aliquip eiusmod consectetur laboris labore ipsum labore duis ex consequat ullamco fugiat exercitation.
 
-The classic template will automatically be added to your project after you run the command:
+Ex pariatur ullamco proident adipisicing pariatur occaecat ea mollit. Cillum ea excepteur non minim duis duis fugiat veniam aliqua quis. Non laborum voluptate eu aliquip id cillum. Aute magna eu pariatur excepteur magna quis sunt nostrud culpa ea excepteur.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+Irure sunt excepteur esse Lorem eiusmod mollit enim sit adipisicing. Commodo reprehenderit eu velit quis in nisi proident exercitation consectetur deserunt sunt. Consequat officia magna est amet pariatur. Excepteur nostrud esse consectetur aliqua non aliqua tempor excepteur velit eu eu.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Material de Apoio
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+Vamos lá, voalá!
 
 ```bash
-cd my-website
-npm run start
+cd my-marketplace-docs-material
+npm run start stzdocs
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+O comando `cd` altera o diretório com o qual você está trabalhando, você precisará navegar pelo terminal.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+O comando `npm run start` cria sua documentação localmente e o fornece por meio de um servidor de desenvolvimento, pronto para visualização em seu localhost
