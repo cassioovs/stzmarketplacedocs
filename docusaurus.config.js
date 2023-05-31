@@ -108,6 +108,17 @@ const config = {
             label: 'Atualizações',
           },
           {
+            type: 'localeDropdown',
+            position: 'right',
+            dropdownItemsAfter: [
+              {
+                to: 'https://youtube.com/',
+                label: 'Ajuda para traduzir',
+              },
+            ],
+          },
+      
+          {
             type: 'html',
             position: 'left',
             value: '<button>Versão 1.0</button>',
@@ -117,10 +128,10 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-         '<br><H2>EM PROCESSO DE HOMOLOGAÇÃO</H2>',
+         '<H2>EM PROCESSO DE HOMOLOGAÇÃO</H2>',
         backgroundColor: '#FF0000',
         textColor: '#fff',
-        isCloseable: false,
+        isCloseable: true,
       },
       footer: {
         logo: {
