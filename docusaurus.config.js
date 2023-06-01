@@ -64,7 +64,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Remove this to remove the "edit this pag" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -91,7 +91,7 @@ const config = {
         appId: 'RZ02QS4D1R',
   
         // Public API key: it is safe to commit it
-        apiKey: 'b99de929468469343015ab36640babf9',
+        apiKey: 'dcbf4fc17eadfaa37ac236ec80b2dd54',
   
         indexName: 'stzdocs',
   
@@ -193,7 +193,7 @@ const config = {
         copyright: "© Copyright - 2023 <br> Todos os direitos reservados <br> Razão Social: Calcenter Calçados Centro Oeste Ltda. <br> CNPJ: 15.048.754/0119-80 <br>",
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
