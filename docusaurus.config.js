@@ -85,6 +85,28 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      //Algolia Search Config Files
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'RZ02QS4D1R',
+  
+        // Public API key: it is safe to commit it
+        apiKey: 'b99de929468469343015ab36640babf9',
+  
+        indexName: 'stzdocs',
+  
+        // Optional: see doc section below
+        contextualSearch: true,
+  
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+  
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -124,14 +146,6 @@ const config = {
             value: '<button>Versão 1.0</button>',
           },
         ],
-      },
-      announcementBar: {
-        id: 'support_us',
-        content:
-         '<H2>EM PROCESSO DE HOMOLOGAÇÃO</H2>',
-        backgroundColor: '#FF0000',
-        textColor: '#fff',
-        isCloseable: true,
       },
       footer: {
         logo: {
