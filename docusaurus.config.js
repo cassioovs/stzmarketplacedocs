@@ -23,12 +23,11 @@ const config = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/static/img/logopwa.png',
+            href: '/img/logopwa.png',
           },
           {
             tagName: 'link',
-            rel: 'manifest',
-            href: '/static/manifest.json', // your PWA manifest
+            rel: '/manifest.json', // your PWA manifest
           },
           {
             tagName: 'meta',
