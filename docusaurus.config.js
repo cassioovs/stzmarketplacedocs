@@ -6,11 +6,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-
-  plugins: [ 
-      [
-        '@docusaurus/plugin-pwa',
+  plugins: [
+    [
+      '@docusaurus/plugin-pwa',
       {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
         pwaHead: [
           {
             tagName: 'link',
@@ -20,50 +25,18 @@ const config = {
           {
             tagName: 'link',
             rel: 'manifest',
-            href: '/static/manifest.json',
+            href: 'static/manifest.json', // your PWA manifest
           },
           {
             tagName: 'meta',
             name: 'theme-color',
             content: 'rgb(37, 194, 160)',
           },
-          {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-capable',
-            content: 'yes',
-          },
-          {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-status-bar-style',
-            content: '#000',
-          },
-          {
-            tagName: 'link',
-            rel: 'apple-touch-icon',
-            href: '/static/img/logopwa.png',
-          },
-          {
-            tagName: 'link',
-            rel: 'mask-icon',
-            href: '/static/img/logopwa.png',
-            color: 'rgb(37, 194, 160)',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileImage',
-            content: '/static/img/logopwa.png',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileColor',
-            content: '#000',
-          },
         ],
       },
-      ]
-    ], 
+    ],
+  ],
   
-
   title: 'Docs',
   tagline: 'Uma base de conhecimento para o seu dia a dia 😍🥰💖',
   favicon: 'img/favicon.ico',
