@@ -1,10 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
+
 const config = {
   plugins: [
     [
@@ -15,6 +15,9 @@ const config = {
           'appInstalled',
           'standalone',
           'queryString',
+          'mobile',
+          'saveData',
+          'always',
         ],
         pwaHead: [
           {
@@ -25,7 +28,7 @@ const config = {
           {
             tagName: 'link',
             rel: 'manifest',
-            href: 'static/manifest.json', // your PWA manifest
+            href: '/static/manifest.json', // your PWA manifest
           },
           {
             tagName: 'meta',
