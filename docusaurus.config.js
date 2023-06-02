@@ -31,7 +31,7 @@ const config = {
     ], 
 
   title: 'Docs',
-  tagline: 'Sua base de conhecimento para o seu dia a dia 😍🥰💖',
+  tagline: 'Uma base de conhecimento para o seu dia a dia 😍🥰💖',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
