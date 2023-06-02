@@ -9,26 +9,35 @@ const config = {
 
   plugins: [ 
       [
-        'docusaurus-plugin-openapi-docs',
-        {
-          id: "apiDocs",
-          docsPluginId: "classic",
-          config: {
-            petstore: { // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
-              specPath: "src/apis/vtex.yaml", // Path to designated spec file
-              outputDir: "src/apis/", // Output directory for generated .mdx docs
-              sidebarOptions: {
-                groupPathsBy: "tag",
-              },
-            },
-            vtex: {
-              specPath: "src/apis/vtex.yaml",
-              outputDir: "src/apis/",
-            }
-          }
-        },
+        '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: './static/img/pwa/pwa-512.svg',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: './static/manifest.json', // your PWA manifest
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(37, 194, 160)',
+          },
+        ],
+      },
       ]
     ], 
+  
 
   title: 'Docs',
   tagline: 'Uma base de conhecimento para o seu dia a dia 😍🥰💖',
@@ -207,4 +216,3 @@ const config = {
 };
 
 module.exports = config;
-
