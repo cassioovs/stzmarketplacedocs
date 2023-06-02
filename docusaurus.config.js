@@ -11,16 +11,22 @@ const config = {
       [
         '@docusaurus/plugin-pwa',
         {
+            debug: true,
+            offlineModeActivationStrategies: [
+              'appInstalled',
+              'standalone',
+              'queryString',
+            ],
           pwaHead: [
             {
               tagName: 'link',
               rel: 'icon',
-              href: '/static/img/logopwa.png',
+              href: './static/img/logopwa.png',
             },
             {
               tagName: 'link',
               rel: 'manifest',
-              href: '/static/manifest.json',
+              href: './static/manifest.json',
             },
             {
               tagName: 'meta',
@@ -40,18 +46,18 @@ const config = {
             {
               tagName: 'link',
               rel: 'apple-touch-icon',
-              href: '/static/img/logopwa.png',
+              href: './static/img/logopwa.png',
             },
             {
               tagName: 'link',
               rel: 'mask-icon',
-              href: '/static/img/logopwa.png',
+              href: './static/img/logopwa.png',
               color: 'rgb(37, 194, 160)',
             },
             {
               tagName: 'meta',
               name: 'msapplication-TileImage',
-              content: '/static/img/logopwa.png',
+              content: './static/img/logopwa.png',
             },
             {
               tagName: 'meta',
