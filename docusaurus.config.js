@@ -52,8 +52,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en','fr', 'fa'],
+    defaultLocale: 'pt',
+    locales: ['pt','en','fr', 'fa'],
   },
 
   presets: [
@@ -141,8 +141,8 @@ const config = {
             position: 'right',
             dropdownItemsAfter: [
               {
-                to: 'https://youtube.com/',
-                label: 'Ajuda para traduzir',
+                to: 'https://youtu.be/yRYFKcMa_Ek',
+                label: 'Solicitar tradução',
               },
             ],
           },
