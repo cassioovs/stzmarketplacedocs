@@ -31,7 +31,7 @@ const config = {
     ], 
 
   title: 'Docs',
-  tagline: 'Sua base de conhecimento favorita para o seu dia a dia 😍🥰💖',
+  tagline: 'Sua base de conhecimento para o seu dia a dia 😍🥰💖',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -92,7 +92,7 @@ const config = {
         appId: 'RZ02QS4D1R',
   
         // Public API key: it is safe to commit it
-        apiKey: 'dcbf4fc17eadfaa37ac236ec80b2dd54',
+        apiKey: '8fae5c2783ece53892ec4b044b2342cb',
   
         indexName: 'stzdocs',
   
