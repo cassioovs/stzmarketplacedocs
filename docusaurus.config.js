@@ -31,7 +31,7 @@ const config = {
     ], 
 
   title: 'Docs',
-  tagline: 'Aprenda mais a respeito das operações relacionadas ao marketplaces',
+  tagline: 'Sua base de conhecimento favorita para o seu dia a dia 😍🥰💖',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
