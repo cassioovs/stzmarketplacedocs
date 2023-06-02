@@ -1,6 +1,6 @@
 {
-  "name": "Docusaurus v2",
-  "short_name": "Docusaurus",
+  "name": "STZ Docs",
+  "short_name": "STZ Docs",
   "theme_color": "#2196f3",
   "background_color": "#424242",
   "display": "standalone",
@@ -9,47 +9,47 @@
   "related_applications": [
     {
       "platform": "webapp",
-      "url": "https://stzdocs.netlify.app/manifest.json"
+      "url": "https://stzdocs.netlify.app/static/manifest.json"
     }
   ],
   "icons": [
     {
-      "src": "./img/logopwa.png",
+      "src": "/static/img/logopwa.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "./img/logopwa.png",
+      "src": "/static/img/logopwa.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "./img/logopwa.png",
+      "src": "/static/img/logopwa.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "./img/logopwa.png",
+      "src": "/static/img/logopwa.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "./img/logopwa.png",
+      "src": "/static/img/logopwa.png",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
-      "src": "./img/logopwa.png",
+      "src": "/static/img/logopwa.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./img/logopwa.png",
+      "src": "/static/img/logopwa.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "./img/logopwa.png",
+      "src": "/static/img/logopwa.png",
       "sizes": "512x512",
       "type": "image/png"
     }
