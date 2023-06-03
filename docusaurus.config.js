@@ -174,10 +174,9 @@ const config = {
             label: 'Guias',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
+            to: 'blog',
             label: 'Atualizações',
+            position: 'left'
           },
           {
             type: 'localeDropdown',
