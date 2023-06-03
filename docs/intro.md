@@ -19,7 +19,7 @@ Vamos começar?
 
 ## Entendendo os fluxos
 
-Aute nulla eu ullamco consectetur sint commodo ut exercitation ea cupidatat pariatur eu. Reprehenderit deserunt duis deserunt magna non non duis excepteur cillum excepteur. Aliquip eiusmod consectetur laboris labore ipsum labore duis ex consequat ullamco fugiat exercitation.
+Aute nulla eu ullamco consectetur qwsint commodo ut exercitation ea cupidatat pariatur eu. Reprehenderit deserunt duis deserunt magna non non duis excepteur cillum excepteur. Aliquip eiusmod consectetur laboris labore ipsum labore duis ex consequat ullamco fugiat exercitation.
 
 Ex pariatur ullamco proident adipisicing pariatur occaecat ea mollit. Cillum ea excepteur non minim duis duis fugiat veniam aliqua quis. Non laborum voluptate eu aliquip id cillum. Aute magna eu pariatur excepteur magna quis sunt nostrud culpa ea excepteur.
 
