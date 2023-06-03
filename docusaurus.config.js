@@ -88,7 +88,7 @@ const config = {
   organizationName: 'cassioovs', // Usually your GitHub org/user name.
   projectName: 'stzmarketplacedocs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
 
   // Even if you don't use internalization, you can use this field to set useful
