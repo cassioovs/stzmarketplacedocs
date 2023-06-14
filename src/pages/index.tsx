@@ -20,8 +20,8 @@ function HomepageHeader() {
         {'\xa0🥳'}
       </div>
       <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap'}}>
-        <div style={{flex: 1, whiteSpace: 'nowrap'}}>
-          <div className={styles.topBannerDescription}>
+        <div>
+          <div>
             Uma base de conhecimento para o seu dia a dia 😍🥰💖
             <p></p>
             Em processo de desenvolvimento 😉🔝

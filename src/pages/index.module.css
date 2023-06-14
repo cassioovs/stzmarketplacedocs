@@ -63,6 +63,7 @@ html[data-theme='dark'] .topBannerTitleText {
 
 .topBannerDescription {
   font-size: 20px;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .topBannerDescription {
