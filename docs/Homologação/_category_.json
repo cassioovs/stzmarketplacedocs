@@ -1,8 +1,8 @@
 {
-  "label": "Ações - Emergências [HML]",
+  "label": "Utilitários",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Escolha o guia relacionado a sua necessidade"
+    "description": "Escolha a ferramenta relacionada a sua necessidade"
   }
 }
